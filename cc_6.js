@@ -18,9 +18,16 @@ class managers extends employee {
 }
 
 //added team size to the manager title
-new employee()
-new managers() 
+const emp= new employee("Dave", "Accounting");
+const emp1= new employee ("Von","Janitor");
+const man= new managers("Jim", "Manager",8); 
+
 
 class company{
-    constructor
+    constructor(){
+    this.employee=[]; 
+}
+}
+addEmployee(employee){
+    if
 }
