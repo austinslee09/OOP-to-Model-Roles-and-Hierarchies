@@ -10,9 +10,8 @@ describe(){
 //described the name and the department of employee
 }
 class managers extends employee {
-    constructor(name,dept){
-    super(name);
-    super(dept);
+    constructor(name,dept,teamSize){
+    super(name,dept);
     this.teamSize=teamSize;
 }
 }
