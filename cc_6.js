@@ -17,7 +17,7 @@ class managers extends employee {
 }
 describe(){
     const employeeInfo = super.describe();
-    return '${this.name} is in the ${this.teamSize}';
+    return '${this.name} has a team of ${this.teamSize}';
 }
 }
 
