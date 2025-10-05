@@ -46,9 +46,8 @@ listEmployees() {
 // class created with list and add methods
 
 const Co = new company();
-Co.addEmployee(emp);
-Co.addEmployee(emp1);
-Co.addEmployee(man);
+Co.addEmployee(emp, man, emp1);
+
 
 Co.listEmployees();
 //add workers and company obj
