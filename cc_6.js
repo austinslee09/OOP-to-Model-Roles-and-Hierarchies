@@ -5,7 +5,7 @@ constructor(name,dept){
     this.department=dept;
 }
 describe(){
-    return '${this.name} is in the ${this.department}';
+    return `${this.name} is in the ${this.department}`;
 }
 }
 //described the name and the department of employee
@@ -16,15 +16,14 @@ class managers extends employee {
     this.teamSize=teamSize;
 }
 describe(){
-    const employeeInfo = super.describe();
-    return '${this.name} has a team of ${this.teamSize}';
+    return `${this.name} is in the ${this.dept} department and has a team of ${this.teamSize}`;
 }
 }
 
 //added team size to the manager title
 const emp= new employee("Dave", "Accounting");
 const emp1= new employee ("Von","Janitor");
-const man= new managers("Jim", "Manager", 8);
+const man= new managers("Jim", "Managial", 8);
 //subclass created for employees and managers
 
 
@@ -46,7 +45,9 @@ listEmployees() {
 // class created with list and add methods
 
 const Co = new company();
-Co.addEmployee(emp,emp1,man);
+Co.addEmployee(emp);
+Co.addEmployee(emp1);
+Co.addEmployee(man);
 
 Co.listEmployees();
 //add workers and company obj
