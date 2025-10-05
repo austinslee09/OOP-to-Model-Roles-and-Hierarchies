@@ -25,9 +25,22 @@ const man= new managers("Jim", "Manager",8);
 
 class company{
     constructor(){
-    this.employee=[]; 
+    this.employees=[]; 
 }
-}
+
 addEmployee(employee){
-    if
+    this.employees.push(employee)
 }
+
+listEmployees() {
+    for(emp of this.employees)
+    console.log(employee.describe());
+}
+}
+// class created with list and add methods
+
+const Co = new company();
+Co.addEmployee(emp,emp1,man);
+
+Co.listEmployees();
+//add workers and company obj
