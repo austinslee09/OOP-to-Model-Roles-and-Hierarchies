@@ -34,8 +34,8 @@ addEmployee(employee){
 }
 
 listEmployees() {
-    for(employ of this.employees)
-    console.log(employ.describe());
+    for(emp of this.employees)
+    console.log(emp.describe());
 }
 }
 // class created with list and add methods
