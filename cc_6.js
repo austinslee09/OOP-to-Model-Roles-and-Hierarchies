@@ -5,7 +5,7 @@ constructor(name,dept){
     this.department=dept;
 }
 describe(){
-    return `${this.name} is in the ${this.department}`;
+    return `${this.name} works in the ${this.department}`;
 }
 }
 //described the name and the department of employee
