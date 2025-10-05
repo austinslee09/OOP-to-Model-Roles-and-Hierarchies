@@ -4,16 +4,20 @@ constructor(name,dept){
     this.name=name;
     this.department=dept;
 }
-
-//described the name and the department of employee
+describe(){
+    return '${this.name} is in the ${this.department}';
 }
+}
+//described the name and the department of employee
+
 class managers extends employee {
     constructor(name,dept,teamSize){
     super(name,dept);
     this.teamSize=teamSize;
 }
 describe(){
-    return '${this.name} is in the ${this.department}';
+    const employeeInfo = super.describe();
+    return '${this.name} is in the ${this.teamSize}';
 }
 }
 
@@ -34,8 +38,8 @@ addEmployee(employee){
 }
 
 listEmployees() {
-    for(employee of this.employees){
-    console.log(employee.describe());
+    for(const emp of this.employees){
+    console.log(emp.describe());
     }
 }
 }
