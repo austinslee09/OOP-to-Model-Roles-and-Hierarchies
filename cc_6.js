@@ -20,7 +20,8 @@ class managers extends employee {
 //added team size to the manager title
 const emp= new employee("Dave", "Accounting");
 const emp1= new employee ("Von","Janitor");
-const man= new managers("Jim", "Manager",8); 
+const man= new managers("Jim", "Manager", 8);
+//subclass created for employees and managers
 
 
 class company{
