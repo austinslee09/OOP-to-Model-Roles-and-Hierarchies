@@ -14,9 +14,10 @@ class managers extends employee {
     constructor(name,dept,teamSize){
     super(name,dept);
     this.teamSize=teamSize;
+    
 }
 describe(){
-    return `${this.name} is in the ${this.dept} department and has a team of ${this.teamSize}`;
+    return `${this.name} is in the ${this.department} department and has a team of ${this.teamSize}`;
 }
 }
 
