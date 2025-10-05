@@ -4,15 +4,16 @@ constructor(name,dept){
     this.name=name;
     this.department=dept;
 }
-describe(){
-    return '${this.name} is in the ${this.department}';
-}
+
 //described the name and the department of employee
 }
 class managers extends employee {
     constructor(name,dept,teamSize){
     super(name,dept);
     this.teamSize=teamSize;
+}
+describe(){
+    return '${this.name} is in the ${this.department}';
 }
 }
 
@@ -34,7 +35,7 @@ addEmployee(employee){
 
 listEmployees() {
     for(employ of this.employees)
-    console.log(employee.describe());
+    console.log(employ.describe());
 }
 }
 // class created with list and add methods
