@@ -24,7 +24,10 @@ describe(){
 //added team size to the manager title
 const emp= new employee("Dave", "Accounting");
 const emp1= new employee ("Von","Janitor");
-const man= new managers("Jim", "Managial", 8);
+const emp2= new employee ("Don", "Supply Chain")
+const man= new managers("Jim", "Accounting", 8);
+const man1= new managers("Tim", "Executive", 12)
+const man2= new managers("Zim", "Supply Chain", 15)
 //subclass created for employees and managers
 
 
@@ -48,7 +51,10 @@ listEmployees() {
 const Co = new company();
 Co.addEmployee(emp);
 Co.addEmployee(emp1);
+Co.addEmployee(emp2);
 Co.addEmployee(man);
+Co.addEmployee(man1);
+Co.addEmployee(man2);
 
 Co.listEmployees();
 //add workers and company obj
