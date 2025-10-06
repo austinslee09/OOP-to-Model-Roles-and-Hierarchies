@@ -24,10 +24,10 @@ describe(){
 //added team size to the manager title
 const emp= new employee("Dave", "Accounting");
 const emp1= new employee ("Von","Janitor");
-const emp2= new employee ("Don", "Supply Chain")
+const emp2= new employee ("Don", "Supply Chain");
 const man= new managers("Jim", "Accounting", 8);
-const man1= new managers("Tim", "Executive", 12)
-const man2= new managers("Zim", "Supply Chain", 15)
+const man1= new managers("Tim", "Executive", 12);
+const man2= new managers("Zim", "Supply Chain", 15);
 //subclass created for employees and managers
 
 
@@ -37,7 +37,7 @@ class company{
 }
 
 addEmployee(employee){
-    this.employees.push(employee)
+    this.employees.push(employee);
 }
 
 listEmployees() {
